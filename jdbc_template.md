@@ -1,5 +1,8 @@
 # Spring Jdbc Template
 
+#### Prerequisites
+* **Dependencies**: spring-jdbc, mysql
+
 #### Task 1: Database Credentials
 * application.properties
 ```java
