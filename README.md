@@ -91,7 +91,7 @@ jdbcTemplate.setDataSource(dataSource);
 
 * **Task 3: Define JdbcTemplate as Bean**
 
-* **Dependency Injection using Constructor **
+* **Dependency Injection using Constructor**
 ```java
 @Bean
 public JdbcTemplate jdbcTemplate(DataSource dataSource){
@@ -100,11 +100,12 @@ public JdbcTemplate jdbcTemplate(DataSource dataSource){
 }
 ```
 (or)
-* **Dependency Injection using Setter **
+* **Dependency Injection using Setter**
 ```java
 @Bean
 public JdbcTemplate jdbcTemplate(DataSource dataSource){
-    JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+    JdbcTemplate jdbcTemplate = new JdbcTemplate();
+    jdbcTemplate.setDataSource(dataSource);
     return jdbcTemplate;
 }
 ```
