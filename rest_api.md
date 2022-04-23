@@ -28,7 +28,7 @@ public class PlaceController {
 	public List<String> searchPlace(@RequestParam("placeName") String placeName) {
     
 		logger.debug("Search Place: {}" , placeName);		
-    logger.debug("Search Place:" + placeName);      
+    		logger.debug("Search Place:" + placeName);      
 		List<String> places = List.of("Marina Beach", "Kalpakkam Beach");				  
 		List<String> results = places.stream().filter(p-> p.contains(placeName)).collect(Collectors.toList());				
 		return results;
@@ -37,12 +37,10 @@ public class PlaceController {
 	
   //Get Place Details by Id
 	@GetMapping("places/{id}")
-	public Place getPlace(@PathVariable("id") Integer id) {
-		
-		logger.debug("Search Place: {}" , placeName);	  
-    logger.info("Get Place" + id);  
-    Place place = new Place("Marina Beach");  
-    return place; 
+	public Place getPlace(@PathVariable("id") Integer id) {				
+    		logger.info("Get Place" + id);  
+    		Place place = new Place("Marina Beach");  //return dummy place object
+    		return place; 
 	}
   
 	//Update
