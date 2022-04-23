@@ -29,7 +29,7 @@ public class UserDAO {
 UserDAO userDAO = new UserDAO();
 ```
 
-##### 3.2: Object Creation usung Spring IOC
+##### 3.2: Object Creation using Spring IOC
 
 * Bean Declarations ( We can declare bean using annotions or using xml configuration ) 
 ```java
@@ -77,13 +77,13 @@ DataSource dataSource;
 
 * **Task 2: Create JdbcTemplate using datasource**
 
-* **Using Constructor(we are passing dataSource) **
+* **Using Constructor(we are passing dataSource)**
 ```java
 JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 ```
 (or)
 
-* **Using setter method( we are passing dataSource) **
+* **Using setter method( we are passing dataSource)**
 ```java
 JdbcTemplate jdbcTemplate = new JdbcTemplate();
 jdbcTemplate.setDataSource(dataSource);
