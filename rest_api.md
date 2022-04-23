@@ -1,5 +1,8 @@
 # Spring - REST API
 
+* **HTTP Verbs** : **GET, POST, PUT, PATCH, DELETE**
+* **Variables**: **RequestParam,PathVariable** 
+
 ```java
 @RestController
 public class PlaceController {
